@@ -263,7 +263,7 @@ if (selected == 'PCOS Prediction'):
 
     # page title
     st.title('PCOS Prediction using ML')
-    st.image('pcos.jpeg',use_column_width= True)
+    st.image('pcos3.jpg',use_column_width= True)
 
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
