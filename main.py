@@ -9,23 +9,14 @@ import numpy as np
 
 # loading the saved models
 
-import pickle
-import os
 
-# Get the current directory of the script
-current_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Adjust file paths using the current directory
-diabetes_model_path = os.path.join("C:\\Users\\ADITI\\Desktop\\multiple disease prediction\\diabetes_model.sav", 'diabetes_model.sav')
-heart_disease_model_path = os.path.join("C:\\Users\\ADITI\\Desktop\\multiple disease prediction\\heart_disease_model.sav", 'heart_disease_model.sav')
-parkinsons_model_path = os.path.join("C:\\Users\\ADITI\\Desktop\\multiple disease prediction\\parkinsons_model.sav", 'parkinsons_model.sav')
-pcos_model_path = os.path.join("C:\\Users\\ADITI\\Desktop\\multiple disease prediction\\pcos_model.sav", 'pcos_model.sav')
 
 # Load models
-diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
-heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
-parkinsons_model = pickle.load(open(parkinsons_model_path, 'rb'))
-pcos_model = pickle.load(open(pcos_model_path, 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+pcos_model = pickle.load(open('pcos_model.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
